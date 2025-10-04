@@ -605,66 +605,52 @@ const quizQuestionsData = [
 const relationshipTypes = {
   "Beste Venn": {
     description:
-      "Du og Zen deler en ubrutt bånd bygget på tillit, lojalitet og gjensidig respekt. Dere forstår hverandre dypt og støtter hverandre uansett hva. Deres vennskap er den typen som varer livet ut.",
+      "Du og Zen ville vært bestevenner! Dere deler samme verdier om lojalitet, rettferdighet og beskyttelse av dem dere bryr dere om. Zen setter pris på din pålitelighet og støtte, og du forstår hans dype omsorgsfulle natur bak den seriøse fasaden. Sammen skaper dere et ubrutt bånd bygget på tillit og gjensidig respekt.",
     image:
       "https://i.pinimg.com/originals/92/a5/6e/92a56e99472407e72ede045e64f944a7.gif",
     traits: ["lojal", "pålitelig", "støttende", "forståelsesfull"],
   },
-  Elskere: {
+  "Romantisk Partner": {
     description:
-      "Det er ubenektelig kjemi mellom deg og Zen! Deres tilknytning går utover vennskap med romantikk, lidenskap og dyp følelsesmessig intimitet. Dere utfyller hverandre perfekt og skaper noe virkelig spesielt sammen.",
+      "Det er ubenektelig kjemi mellom deg og Zen! Du forstår hans komplekse personlighet - fra hans beskyttende instinkter til hans mykere, mer sårbare sider. Du kan se forbi hans tilsynelatende kalde fasade og setter pris på hans dype kapasitet for kjærlighet. Sammen balanserer dere hverandres styrker og svakheter perfekt.",
     image:
       "https://i.pinimg.com/originals/26/11/f3/2611f3670573f212c53d22353024f9e7.gif",
-    traits: ["romantisk", "lidenskapelig", "intim", "omsorgsfull"],
+    traits: ["romantisk", "lidenskapelig", "forståelsesfull", "balanserende"],
   },
-  Venner: {
+  "Familie fra Asia": {
     description:
-      "Du og Zen har et solid, behagelig vennskap. Dere liker hverandres selskap, deler gode samtaler og har det gøy sammen. Selv om dere ikke er så nære som beste venner, bringer dere glede til hverandres liv.",
-    image:
-      "https://i.pinimg.com/originals/cc/0f/76/cc0f761346e1dcafa27cc40cfb20c707.gif",
-    traits: ["vennlig", "behagelig", "morsom", "avslappet"],
-  },
-  Bråkmaker: {
-    description:
-      "Du holder Zen på tå hevne! Som prefekt skal han opprettholde orden, men du skaper akkurat nok kaos til å gjøre ting interessante. Du er rampete, ikke ondsinnet, og Zen nyter hemmelig utfordringen du presenterer.",
-    image:
-      "https://i.pinimg.com/originals/e7/dd/23/e7dd233df1619884f8d6addec975c425.gif",
-    traits: ["rampete", "utfordrende", "underholdende", "regelbrytende"],
-  },
-  Romkamerat: {
-    description:
-      "Du og Zen deler boareal og har utviklet en behagelig hjemmerutine. Dere kjenner hverandres vaner, særpreg og daglige rytmer. Det er en følelse av hjem og kjennskap mellom dere.",
-    image:
-      "https://i.pinimg.com/originals/59/47/95/5947955f03d49d935b4ce032f3d96402.gif",
-    traits: ["hjemlig", "kjent", "behagelig", "rutine"],
-  },
-  Vennfiender: {
-    description:
-      "Ditt forhold til Zen er komplisert! Dere har øyeblikk av stort vennskap og forståelse, men også tider når dere krasjer. Det er spenning men også tiltrekning, og dere utfordrer hverandre på spennende måter.",
-    image:
-      "https://i.pinimg.com/originals/b4/81/d8/b481d82421a51220ae60e4b95a7e8493.gif",
-    traits: ["komplisert", "spenning", "utfordrende", "tiltrekning"],
-  },
-  Kjæreste: {
-    description:
-      "Du har følelser for Zen som går utover vennskap! Det er tiltrekning, sommerfugler i magen og romantisk interesse. Du tenker på ham ofte, og det er en spesiell gnist når dere er sammen som får hjertet ditt til å slå raskere.",
-    image:
-      "https://i.pinimg.com/originals/ec/f5/00/ecf500da72775fb6bf2316a85842afbe.gif",
-    traits: ["romantisk", "tiltrekning", "sommerfugler", "spesiell"],
-  },
-  Barndomsvenn: {
-    description:
-      "Du og Zen har kjent hverandre siden dere var unge! Å vokse opp sammen har skapt et unikt og dyrebar bånd. Dere deler minner, interne vitser og en historie som ingen andre kan forstå.",
+      "Du deler kulturelle røtter og familiebånd med Zen! Som noen med asiatisk bakgrunn forstår du hans respekt for tradisjon, familie-ære og de forventningene som følger med. Dere har en naturlig forståelse av hverandres kulturelle identitet og kan støtte hverandre gjennom utfordringer knyttet til å navigere mellom to kulturer.",
     image:
       "https://i.pinimg.com/originals/02/7f/9d/027f9de4c8914d56a4c813ea37000431.gif",
-    traits: ["langsiktig", "minner", "historie", "dyrebar"],
+    traits: ["kulturell forståelse", "familie-bånd", "tradisjonell", "støttende"],
   },
-  Fiender: {
+  "Studievenner": {
     description:
-      "Du og Zen kommer ikke overens i det hele tatt! Det er konflikt, spenning og muligens fiendskap mellom dere. Dere har forskjellige verdier eller personligheter som gjør det vanskelig å finne felles grunn.",
+      "Du og Zen har et solid akademisk partnerskap! Dere motiverer hverandre til å prestere best mulig og deler en lidenskap for læring. Zen setter pris på din dedikasjon til studier, og du respekterer hans lederegenskaper og ansvarsfølelse. Sammen skaper dere en produktiv og støttende studiemiljø.",
     image:
-      "https://i.pinimg.com/originals/e7/dd/23/e7dd233df1619884f8d6addec975c425.gif",
-    traits: ["konflikt", "spenning", "fiendskap", "utfordrende"],
+      "https://i.pinimg.com/originals/cc/0f/76/cc0f761346e1dcafa27cc40cfb20c707.gif",
+    traits: ["akademisk", "motiverende", "dedikert", "respektfull"],
+  },
+  "Husvenner": {
+    description:
+      "Som Håsblås-studenter deler du og Zen huslojalitet og verdier! Dere forstår viktigheten av vennskap, lojalitet og å stå opp for hverandre. Zen setter pris på din trofasthet og evne til å være der for andre, mens du respekterer hans lederrolle og beskyttende instinkter for huset.",
+    image:
+      "https://i.pinimg.com/originals/59/47/95/5947955f03d49d935b4ce032f3d96402.gif",
+    traits: ["lojal", "troffast", "beskyttende", "husånd"],
+  },
+  "Motsetninger": {
+    description:
+      "Du og Zen representerer interessante motsetninger! Hvor han er seriøs og strukturert, bringer du kanskje mer spontanitet og letthet. Disse forskjellene skaper både spenning og muligheter for vekst. Zen lærer å slappe av med deg, mens du lærer verdien av hans disiplin og ansvarsfølelse.",
+    image:
+      "https://i.pinimg.com/originals/b4/81/d8/b481d82421a51220ae60e4b95a7e8493.gif",
+    traits: ["komplementerende", "lærerik", "utfordrende", "vekst"],
+  },
+  "Beundrere": {
+    description:
+      "Du setter stor pris på Zen fra en viss avstand! Du respekterer hans lederegenskaper, dedikasjon og måten han tar vare på andre på. Han inspirerer deg til å være en bedre person, og du setter pris på hans styrke og integritet, selv om dere kanskje ikke er super nære venner.",
+    image:
+      "https://i.pinimg.com/originals/ec/f5/00/ecf500da72775fb6bf2316a85842afbe.gif",
+    traits: ["respektfull", "inspirert", "beundrende", "motivert"],
   },
 };
 
@@ -688,6 +674,17 @@ const retakeQuizBtn = document.getElementById("retake-quiz");
 const resultTitle = document.getElementById("result-title");
 const resultDescription = document.getElementById("result-description");
 const resultImage = document.getElementById("result-image");
+
+// Debug: Check if elements exist
+console.log("Quiz elements check:", {
+  startQuizBtn,
+  quizIntro,
+  quizQuestions,
+  quizResults,
+  resultTitle,
+  resultDescription,
+  resultImage
+});
 
 // Start quiz
 startQuizBtn.addEventListener("click", () => {
@@ -803,15 +800,13 @@ nextQuestionBtn.addEventListener("click", () => {
 // Calculate relationship type
 function calculateRelationship() {
   const scores = {
-    "Best Friend": 0,
-    Lovers: 0,
-    Friends: 0,
-    "Trouble Maker": 0,
-    Roommate: 0,
-    Friendemies: 0,
-    Crush: 0,
-    "Childhood Friend": 0,
-    Enemies: 0,
+    "Beste Venn": 0,
+    "Romantisk Partner": 0,
+    "Familie fra Asia": 0,
+    "Studievenner": 0,
+    "Husvenner": 0,
+    "Motsetninger": 0,
+    "Beundrere": 0,
   };
 
   // Scoring logic based on answers
@@ -819,139 +814,155 @@ function calculateRelationship() {
     const answer = userAnswers[questionIndex];
     const question = quizQuestionsData[questionIndex];
 
-    // Gender-based restrictions
-    if (question.category === "gender" && answer === 0) {
-      // Male
-      scores["Roommate"] += 3;
+    // Gender scoring
+    if (question.category === "gender") {
+      if (answer === 1) {
+        // Kvinne - høyere sjanse for romantisk
+        scores["Romantisk Partner"] += 3;
+      } else if (answer === 0) {
+        // Mann - høyere sjanse for beste venn
+        scores["Beste Venn"] += 2;
+        scores["Husvenner"] += 1;
+      }
     }
 
-    // Origin-based restrictions
-    if (question.category === "origin" && answer === 0) {
-      // Asia
-      scores["Childhood Friend"] += 5;
-    }
-
-    // Personality-based scoring
-    if (question.category === "personality") {
+    // Origin scoring - VIKTIG for familie-kategorien
+    if (question.category === "origin") {
       if (answer === 0) {
-        // Extroverted
-        scores["Friends"] += 2;
-        scores["Best Friend"] += 1;
-      } else if (answer === 1) {
-        // Introverted
-        scores["Best Friend"] += 2;
-        scores["Lovers"] += 1;
+        // Asia - stor bonus til familie
+        scores["Familie fra Asia"] += 5;
+        scores["Beste Venn"] += 2;
+      } else {
+        scores["Studievenner"] += 1;
+        scores["Beundrere"] += 1;
+      }
+    }
+
+    // Personality scoring
+    if (question.category === "personality") {
+      if (answer === 1) {
+        // Introvert - matcher Zen's dypere side
+        scores["Beste Venn"] += 3;
+        scores["Romantisk Partner"] += 2;
+      } else if (answer === 0) {
+        // Extrovert - motsetninger
+        scores["Motsetninger"] += 2;
+        scores["Husvenner"] += 1;
       } else if (answer === 2) {
-        // Balanced
-        scores["Best Friend"] += 3;
-        scores["Friends"] += 2;
+        // Balansert
+        scores["Studievenner"] += 2;
       }
     }
 
     // Conflict handling
     if (question.category === "conflict") {
-      if (answer === 0) {
-        // Head-on
-        scores["Trouble Maker"] += 2;
-        scores["Friendemies"] += 1;
-      } else if (answer === 2) {
-        // Peaceful
-        scores["Best Friend"] += 2;
-        scores["Friends"] += 1;
+      if (answer === 2) {
+        // Fredelig løsning - matcher Zen's rettferdighetssans
+        scores["Beste Venn"] += 3;
+        scores["Romantisk Partner"] += 2;
+        scores["Familie fra Asia"] += 1;
+      } else if (answer === 0) {
+        // Frontalt - motsetninger
+        scores["Motsetninger"] += 2;
+      } else if (answer === 1) {
+        // Unngår - beundrere
+        scores["Beundrere"] += 1;
       }
     }
 
-    // Authority
+    // Authority - viktig for Zen som prefekt
     if (question.category === "authority") {
-      if (answer === 1) {
-        // Bend rules
-        scores["Trouble Maker"] += 3;
-      } else if (answer === 2) {
-        // Question
-        scores["Friendemies"] += 2;
-      } else if (answer === 3) {
-        // Make own rules
-        scores["Enemies"] += 2;
+      if (answer === 0) {
+        // Følger strengt - støtter hans lederrolle
+        scores["Beste Venn"] += 2;
+        scores["Husvenner"] += 2;
+        scores["Familie fra Asia"] += 1;
+      } else if (answer === 1) {
+        // Bøyer når nødvendig - balansert
+        scores["Romantisk Partner"] += 2;
+        scores["Studievenner"] += 1;
+      } else if (answer === 2 || answer === 3) {
+        // Stiller spørsmål/egne regler - motsetninger
+        scores["Motsetninger"] += 3;
       }
     }
 
-    // Food
+    // Food - Zen elsker matlaging
     if (question.category === "food") {
       if (answer === 0) {
-        // Love cooking
-        scores["Lovers"] += 2;
-        scores["Roommate"] += 1;
+        // Elsker å lage mat - stor bonus
+        scores["Romantisk Partner"] += 4;
+        scores["Beste Venn"] += 3;
+        scores["Familie fra Asia"] += 2;
+      } else if (answer === 3) {
+        // Liker å prøve nye kjøkken
+        scores["Familie fra Asia"] += 2;
       }
     }
 
     // Affection
     if (question.category === "affection") {
       if (answer === 0) {
-        // Physical touch
-        scores["Lovers"] += 3;
+        // Fysisk berøring
+        scores["Romantisk Partner"] += 3;
       } else if (answer === 1) {
-        // Words
-        scores["Best Friend"] += 2;
+        // Bekreftende ord
+        scores["Beste Venn"] += 2;
+        scores["Familie fra Asia"] += 1;
+      } else if (answer === 2) {
+        // Tjenester - matcher Zen's omsorgsfullhet
+        scores["Beste Venn"] += 2;
+        scores["Romantisk Partner"] += 2;
       }
     }
 
     // Relationships
     if (question.category === "relationships") {
       if (answer === 0) {
-        // Loyal
-        scores["Best Friend"] += 3;
-        scores["Lovers"] += 2;
+        // Lojal og engasjert - matcher Zen perfekt
+        scores["Beste Venn"] += 4;
+        scores["Romantisk Partner"] += 3;
+        scores["Familie fra Asia"] += 2;
       } else if (answer === 2) {
-        // Selective
-        scores["Lovers"] += 2;
-        scores["Best Friend"] += 1;
+        // Selektiv men dyp
+        scores["Romantisk Partner"] += 2;
+        scores["Beste Venn"] += 2;
       }
     }
 
-    // Nature
-    if (question.category === "nature") {
+    // Academic - Zen er veldig akademisk
+    if (question.category === "academic") {
       if (answer === 0) {
-        // Love water
-        scores["Best Friend"] += 2;
-        scores["Lovers"] += 1;
+        // Veldig flittig
+        scores["Studievenner"] += 4;
+        scores["Beste Venn"] += 2;
+        scores["Familie fra Asia"] += 1;
+      } else if (answer === 2) {
+        // Liker å lære uten press
+        scores["Romantisk Partner"] += 2;
+      } else if (answer === 3) {
+        // Praktiske ferdigheter
+        scores["Motsetninger"] += 2;
       }
     }
 
-    // Music
-    if (question.category === "music") {
-      if (answer === 0) {
-        // Play instrument
-        scores["Lovers"] += 2;
-        scores["Best Friend"] += 1;
-      }
-    }
-
-    // Helping others
+    // Helping others - viktig for Zen
     if (question.category === "helping") {
       if (answer === 0) {
-        // Actively help
-        scores["Best Friend"] += 3;
+        // Søker aktivt å hjelpe
+        scores["Beste Venn"] += 4;
+        scores["Husvenner"] += 2;
       } else if (answer === 3) {
-        // Protective
-        scores["Lovers"] += 2;
-      }
-    }
-
-    // Emotions
-    if (question.category === "emotions") {
-      if (answer === 1) {
-        // Keep private
-        scores["Best Friend"] += 2;
-      } else if (answer === 0) {
-        // Very emotional
-        scores["Lovers"] += 2;
+        // Beskyttende over kjære - romantisk
+        scores["Romantisk Partner"] += 3;
+        scores["Familie fra Asia"] += 2;
       }
     }
   });
 
   // Find the highest scoring relationship
   let maxScore = 0;
-  let bestRelationship = "Friends"; // Default
+  let bestRelationship = "Studievenner"; // Default
 
   Object.keys(scores).forEach((relationship) => {
     if (scores[relationship] > maxScore) {
@@ -959,6 +970,9 @@ function calculateRelationship() {
       bestRelationship = relationship;
     }
   });
+
+  console.log("Quiz Scores:", scores);
+  console.log("Best Relationship:", bestRelationship, "with score:", maxScore);
 
   return bestRelationship;
 }
@@ -968,9 +982,17 @@ function showResults() {
   const relationship = calculateRelationship();
   const relationshipInfo = relationshipTypes[relationship];
 
-  resultTitle.textContent = `You are Zen's ${relationship}!`;
-  resultDescription.textContent = relationshipInfo.description;
-  resultImage.innerHTML = `<img src="${relationshipInfo.image}" alt="${relationship}">`;
+  console.log("Relationship:", relationship);
+  console.log("Relationship Info:", relationshipInfo);
+  console.log("Elements:", { resultTitle, resultDescription, resultImage });
+
+  if (resultTitle && resultDescription && resultImage && relationshipInfo) {
+    resultTitle.textContent = `Du er Zens ${relationship}!`;
+    resultDescription.textContent = relationshipInfo.description;
+    resultImage.innerHTML = `<img src="${relationshipInfo.image}" alt="${relationship}" style="max-width: 100%; border-radius: 8px;">`;
+  } else {
+    console.error("Missing elements or relationship info");
+  }
 
   quizQuestions.style.display = "none";
   quizResults.style.display = "block";
