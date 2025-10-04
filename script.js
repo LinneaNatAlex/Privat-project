@@ -622,30 +622,35 @@ const relationshipTypes = {
       "Du deler kulturelle røtter og familiebånd med Zen! Som noen med asiatisk bakgrunn forstår du hans respekt for tradisjon, familie-ære og de forventningene som følger med. Dere har en naturlig forståelse av hverandres kulturelle identitet og kan støtte hverandre gjennom utfordringer knyttet til å navigere mellom to kulturer.",
     image:
       "https://i.pinimg.com/originals/02/7f/9d/027f9de4c8914d56a4c813ea37000431.gif",
-    traits: ["kulturell forståelse", "familie-bånd", "tradisjonell", "støttende"],
+    traits: [
+      "kulturell forståelse",
+      "familie-bånd",
+      "tradisjonell",
+      "støttende",
+    ],
   },
-  "Studievenner": {
+  Studievenner: {
     description:
       "Du og Zen har et solid akademisk partnerskap! Dere motiverer hverandre til å prestere best mulig og deler en lidenskap for læring. Zen setter pris på din dedikasjon til studier, og du respekterer hans lederegenskaper og ansvarsfølelse. Sammen skaper dere en produktiv og støttende studiemiljø.",
     image:
       "https://i.pinimg.com/originals/cc/0f/76/cc0f761346e1dcafa27cc40cfb20c707.gif",
     traits: ["akademisk", "motiverende", "dedikert", "respektfull"],
   },
-  "Husvenner": {
+  Husvenner: {
     description:
       "Som Håsblås-studenter deler du og Zen huslojalitet og verdier! Dere forstår viktigheten av vennskap, lojalitet og å stå opp for hverandre. Zen setter pris på din trofasthet og evne til å være der for andre, mens du respekterer hans lederrolle og beskyttende instinkter for huset.",
     image:
       "https://i.pinimg.com/originals/59/47/95/5947955f03d49d935b4ce032f3d96402.gif",
     traits: ["lojal", "troffast", "beskyttende", "husånd"],
   },
-  "Motsetninger": {
+  Motsetninger: {
     description:
       "Du og Zen representerer interessante motsetninger! Hvor han er seriøs og strukturert, bringer du kanskje mer spontanitet og letthet. Disse forskjellene skaper både spenning og muligheter for vekst. Zen lærer å slappe av med deg, mens du lærer verdien av hans disiplin og ansvarsfølelse.",
     image:
       "https://i.pinimg.com/originals/b4/81/d8/b481d82421a51220ae60e4b95a7e8493.gif",
     traits: ["komplementerende", "lærerik", "utfordrende", "vekst"],
   },
-  "Beundrere": {
+  Beundrere: {
     description:
       "Du setter stor pris på Zen fra en viss avstand! Du respekterer hans lederegenskaper, dedikasjon og måten han tar vare på andre på. Han inspirerer deg til å være en bedre person, og du setter pris på hans styrke og integritet, selv om dere kanskje ikke er super nære venner.",
     image:
@@ -683,7 +688,7 @@ console.log("Quiz elements check:", {
   quizResults,
   resultTitle,
   resultDescription,
-  resultImage
+  resultImage,
 });
 
 // Start quiz
@@ -803,10 +808,10 @@ function calculateRelationship() {
     "Beste Venn": 0,
     "Romantisk Partner": 0,
     "Familie fra Asia": 0,
-    "Studievenner": 0,
-    "Husvenner": 0,
-    "Motsetninger": 0,
-    "Beundrere": 0,
+    Studievenner: 0,
+    Husvenner: 0,
+    Motsetninger: 0,
+    Beundrere: 0,
   };
 
   // Scoring logic based on answers
