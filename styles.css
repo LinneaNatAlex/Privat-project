@@ -1913,3 +1913,14 @@ body::before {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
   transform: translateY(-2px);
 }
+
+.watermark a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.watermark a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
