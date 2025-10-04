@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenthai Tezzory - Galtvort Student Profil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Background Music - YouTube Embed -->
+    <div
+      id="youtube-player-container"
+      style="
+        position: fixed;
+        top: -1000px;
+        left: -1000px;
+        width: 1px;
+        height: 1px;
+        z-index: -1;
+      "
+    >
+      <iframe
+        allow="autoplay; encrypted-media; fullscreen"
+        frameborder="0"
+        height="1"
+        id="youtube-player"
+        src="https://www.youtube.com/embed/RFzZ-xpyfoo?enablejsapi=1&autoplay=1&controls=0&mute=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3"
+        width="1"
+      ></iframe>
+    </div>
+
+    <!-- Fallback audio element -->
+    <audio id="background-music" loop preload="auto" style="display: none">
+      <source src="" type="audio/mpeg" />
+    </audio>
+
+    <!-- Music Control Panel -->
+    <div class="music-control">
+      <button id="music-toggle">⏸ Pause Musikk</button>
+      <div class="volume-control">
+        <span class="volume-label">Volum:</span>
+        <input
+          class="volume-slider"
+          id="volume-slider"
+          type="range"
+          min="0"
+          max="100"
+          value="30"
+        />
+      </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scroll-to-top">↑</button>
+
+    <!-- MAIN CONTAINER -->
+    <div class="outer-container">
+      <!-- HEADER NAVIGATION BAR -->
+      <div class="header-bar">
+        <!-- IMAGE GALLERY CAROUSEL -->
+        <div class="image-gallery">
+          <!-- GALLERY SLIDES CONTAINER -->
+          <div class="gallery-slides" id="gallery-slides">
+            <!-- SLIDE 1: PROFILE -->
+            <div
+              class="gallery-slide active"
+              data-menu="PROFILE"
+              id="profile-slide"
+              style="
+                background-image: url('https://i.pinimg.com/originals/02/7f/9d/027f9de4c8914d56a4c813ea37000431.gif');
+                background-size: cover;
+                background-position: center;
+              "
+            >
+              <div class="slide-label">PROFIL</div>
+            </div>
+            <!-- SLIDE 2: ROMANCE -->
+            <div
+              class="gallery-slide"
+              data-menu="ROMANCE"
+              style="
+                background-image: url('https://i.pinimg.com/originals/26/11/f3/2611f3670573f212c53d22353024f9e7.gif');
+              "
+            >
+              <div class="slide-label">ROMANTIKK</div>
+            </div>
+            <!-- SLIDE 3: MUSIC -->
+            <div
+              class="gallery-slide"
+              data-menu="INSPO MUSIC"
+              style="
+                background-image: url('https://i.pinimg.com/originals/59/47/95/5947955f03d49d935b4ce032f3d96402.gif');
+              "
+            >
+              <div class="slide-label">INSPO MUSIKK</div>
+            </div>
+            <!-- SLIDE 4: FUN FACTS -->
+            <div
+              class="gallery-slide"
+              data-menu="FUN FACTS"
+              style="
+                background-image: url('https://i.pinimg.com/originals/b4/81/d8/b481d82421a51220ae60e4b95a7e8493.gif');
+              "
+            >
+              <div class="slide-label">INSPIRASJON</div>
+            </div>
+            <!-- SLIDE 5: QUIZ -->
+            <div
+              class="gallery-slide"
+              data-menu="QUIZ"
+              style="
+                background-image: url('https://i.pinimg.com/originals/ec/f5/00/ecf500da72775fb6bf2316a85842afbe.gif');
+              "
+            >
+              <div class="slide-label">QUIZ</div>
+            </div>
+          </div>
+
+          <!-- GALLERY NAVIGATION ARROWS -->
+          <button class="gallery-nav prev" id="gallery-prev">‹</button>
+          <button class="gallery-nav next" id="gallery-next">›</button>
+
+          <!-- GALLERY DOTS -->
+          <div class="gallery-dots" id="gallery-dots">
+            <div class="gallery-dot active" data-slide="0"></div>
+            <div class="gallery-dot" data-slide="1"></div>
+            <div class="gallery-dot" data-slide="2"></div>
+            <div class="gallery-dot" data-slide="3"></div>
+            <div class="gallery-dot" data-slide="4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE CONTENT -->
+      <div class="profile-content">
+        <div class="profile-title">Zenthai Tezzory</div>
+        <div class="profile-quote">
+          Lojalitet og hardt arbeid seirer alltid.
+        </div>
+
+        <div class="profile-grid">
+          <div class="profile-img-container">
+            <img
+              alt="Zenthai Profile"
+              class="profile-img"
+              src="https://i.pinimg.com/originals/92/a5/6e/92a56e99472407e72ede045e64f944a7.gif"
+            />
+          </div>
+
+          <div class="profile-info-container">
+            <div class="system-status">
+              <h3 class="status-section-title">SAMMENDRAG STATUS</h3>
+              <div class="health-bar-container">
+                <span class="health-label">HP</span>
+                <div class="health-bar">
+                  <div class="health-bar-fill" style="width: 100%"></div>
+                  <span class="health-value">100 / 100</span>
+                </div>
+              </div>
+              <ul class="status-list">
+                <li>
+                  <span class="status-label">TILSTAND:</span
+                  ><span class="status-value positive" data-status="condition"
+                    >Optimal</span
+                  >
+                </li>
+                <li>
+                  <span class="status-label">FYSISK:</span
+                  ><span class="status-value positive" data-status="physical"
+                    >Ingen skader</span
+                  >
+                </li>
+                <li>
+                  <span class="status-label">MENTAL:</span
+                  ><span class="status-value positive">Stabil</span>
+                </li>
+              </ul>
+            </div>
+
+            <h2 class="about-title">Om Zenthai</h2>
+            <ul class="zenthai-facts">
+              <li><span class="fact-label">Status:</span> Singel</li>
+              <li><span class="fact-label">Øyefarge:</span> Mørkebrun</li>
+              <li>
+                <span class="fact-label">Hårfarge:</span> Svart med brun
+                kontrast
+              </li>
+              <li><span class="fact-label">Høyde:</span> 185 cm</li>
+              <li><span class="fact-label">Alder:</span> 16</li>
+              <li><span class="fact-label">Hus:</span> Håsblås</li>
+              <li><span class="fact-label">Klasse:</span> 6</li>
+              <li>
+                <span class="fact-label">Favorittfarge:</span> Gul og svart
+              </li>
+              <li><span class="fact-label">Favorittfag:</span> Formler</li>
+              <li>
+                <span class="fact-label">Egenskaper:</span> Lojal, arbeidsom,
+                tålmodig, rettferdig
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="personality-text">
+          <div class="personality-title-container">
+            <div class="personality-title">Personlighet</div>
+          </div>
+          <p>
+            <span class="dropcap">Z</span>enthai — eller Zen — er en av de
+            menneskene du automatisk føler deg heldig for å være i nærheten av.
+            Bare å gå inn i samme rom som ham gir deg følelsen av å bli sett og
+            hørt. Han er personen som gir deg den typen oppmerksomhet som
+            fortjener en hovedperson i en film, og den følelsen er vanskelig å
+            bli lei av. Med andre ord er han sjarmerende, søt, en flott lytter,
+            forståelsesfull, morsom, arbeidsom og tålmodig.
+          </p>
+
+          <p>
+            Zen ble oppdratt i et strengt, veldig tradisjonelt fullblodshushold.
+            Han måtte venne seg til formalitet, regler og forventninger så høye
+            at du trenger en sopelime for å nå dem. Likevel, under disse
+            omstendighetene, ble han aldri kald. Han lærte i ung alder hvordan
+            han skulle bruke høflighet som våpen — snille og myke ord — men om
+            nødvendig, skarpe. Når en krangel eller slagsmål bryter ut, er han
+            den første til å dempe det. Han trenger bare en setning eller en
+            grasiøs bukk før du glemmer at han nettopp kalte politikkene dine
+            utdaterte.
+          </p>
+
+          <p>
+            Du ville ikke tro at den samme gutten har et sinn stappet med så mye
+            kunnskap om psykologi. Han vet hvordan han skal håndtere en
+            situasjon, bare ved å lese rommet. Han kunne lett spille triks med
+            hvem som helsts sinn, selv om det ikke er i hans natur.
+          </p>
+
+          <p>
+            Men under denne prins-sjarmerende personligheten hans, er det en
+            ekte følelse av beskyttelse. Når noen trenger hjelp, tar han alltid
+            et skritt frem, selv om det betyr at han kan ende opp med å bli
+            skadet selv. Han nøler aldri. Han kan synes ting er dumme, sukke
+            eller klage mildt over å få skoene sine gjennomvåte, men han ville
+            aldri gå sin vei.
+          </p>
+
+          <p>
+            Zen verdsetter lojalitet og tradisjon, men selv han kan lett bryte
+            reglene hvis det større gode krever det. Som prefekt har han sine
+            plikter, og dualiteten kan gjøre det vanskelig for noen å lese ham.
+            Han kan virke nesten skremmende på andre. Men han er ikke høylytt,
+            han lengter ikke etter oppmerksomhet — han er ganske enkelt Zen.
+          </p>
+        </div>
+
+        <div class="personality-text">
+          <div class="personality-title-container">
+            <div class="personality-title">Utseende</div>
+          </div>
+          <p>
+            <span class="dropcap">Z</span>en har mørkt hår som ser nesten svart
+            ut, men får en fin brun glans i lyset. Øynene hans er mørkebrune og
+            ser alltid ut som han tenker på noe. Han er ganske høy og ser ut som
+            han trener, men ikke på en overdreven måte.
+          </p>
+
+          <p>
+            Klær bryr han seg ikke så mye om. Hjemme må han gå i fancy greier,
+            men på skolen tar han bare på seg det første han finner. Håret
+            holder han ryddig med voks eller bare kjemmer det til siden.
+            Uniformen bruker han når han må, som i timene eller når han går
+            rundt som prefekt.
+          </p>
+        </div>
+      </div>
+
+      <!-- ROMANCE SECTION -->
+      <div class="romance-container" style="display: none">
+        <h2 class="romance-title">Romantikk & Forhold</h2>
+        <div class="romance-content">
+          <div class="romance-section">
+            <h3 class="romance-question">Zen og romanse #forhold</h3>
+            <p class="romance-answer">
+              Gutten er en sjarmør, men desverre er dette bare slik gutten er.
+              Han prøver ikke sjarmere deg i senk (selv om hele oppførselen hans
+              bare oser karisma og selvtilitt), han er bare Zen. Nå, det betyr
+              ikke at han ikke faktisk kan flørte. Han er veldig flink på det,
+              og han gjør det delevis allerede uten å være klar over det. Han er
+              bare veldig karismatisk og positiv skjel, så det er ikke rart det
+              er vanskelig å vite når han er genuin.
+            </p>
+            <p class="romance-answer">
+              Zen derimot er veldig direkte med de han liker, men det er likevel
+              et dilemma som står i veien for han – han har aldri vært
+              forelsket. Det vil si at det vil nok ta litt tid før han finner ut
+              at han potensielt kunne være forelsket, så være tålmodig med den
+              stakkars gutten. Han er bare Zen…
+            </p>
+            <p class="romance-answer">
+              Når han først oppdager følelsene sine, og de er gjengjelt så er
+              han den søteste, snilleste og mest støttende partneren man kan ha.
+              Samtidig, kan han bli en good del overbeskyttende. Resten får en
+              nesten finne ut på egenhånd.
+            </p>
+          </div>
+        </div>
+
+        <div class="romance-inspo-section">
+          <div
+            class="dropdown-toggle"
+            onclick="toggleDropdown('romance-video')"
+          >
+            <span>Inspirasjonsvideo</span>
+            <span class="dropdown-arrow">▼</span>
+          </div>
+          <div
+            class="dropdown-content"
+            id="romance-video"
+            style="display: none"
+          >
+            <div class="romance-youtube-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/t14bpid3jKM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MUSIC SECTION -->
+      <div class="playlist-container" style="display: none">
+        <h2 class="playlist-title">Zenthai's INSPO MUSIKK</h2>
+        <div class="spotify-embed-container">
+          <iframe
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            allowfullscreen
+            frameborder="0"
+            height="500"
+            loading="lazy"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1EQncLwOalG3K7?utm_source=generator&theme=0"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- FUN FACTS SECTION -->
+      <div class="fun-facts-container" style="display: none">
+        <h2 class="fun-facts-title">Inspirasjon</h2>
+        <div class="fun-facts-content">
+          <div class="inspo-videos-grid">
+            <div class="inspo-video-item">
+              <iframe
+                width="400"
+                height="315"
+                src="https://www.youtube.com/embed/gk60DRKbmOc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="inspo-video-item">
+              <iframe
+                width="400"
+                height="315"
+                src="https://www.youtube.com/embed/BmYeiFTsSC0"
+                title="different hyungsik😈😎#parkhyungsik #highsociety"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUIZ SECTION -->
+      <div class="quiz-container" style="display: none">
+        <h2 class="quiz-title">Hva er ditt forhold til Zen?</h2>
+        <div class="quiz-content">
+          <div class="quiz-section" id="quiz-intro">
+            <h3 class="quiz-question">
+              Klar til å oppdage din tilknytning til Zen?
+            </h3>
+            <p class="quiz-description">
+              Svar på disse 25 spørsmålene om deg selv, og vi vil bestemme
+              hvilken type forhold du har til Zen. Fra beste venner til
+              barndomsvenner, elskere til bråkmakere - la oss finne ut hvor du
+              passer inn i hans verden!
+            </p>
+            <button class="quiz-button" id="start-quiz">Start Quiz</button>
+          </div>
+
+          <div class="quiz-section" id="quiz-questions" style="display: none">
+            <div class="quiz-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+              <span class="progress-text" id="progress-text"
+                >Spørsmål 1 av 25</span
+              >
+            </div>
+
+            <div class="question-container">
+              <h3 class="question-text" id="question-text"></h3>
+              <div class="answer-options" id="answer-options"></div>
+            </div>
+
+            <div class="quiz-navigation">
+              <button class="quiz-nav-button" disabled id="prev-question">
+                Previous
+              </button>
+              <button class="quiz-nav-button" id="next-question">Next</button>
+            </div>
+          </div>
+
+          <div class="quiz-section" id="quiz-results" style="display: none">
+            <h3 class="result-title" id="result-title"></h3>
+            <div class="result-description" id="result-description"></div>
+            <div class="result-image" id="result-image"></div>
+            <button class="quiz-button" id="retake-quiz">
+              Take Quiz Again
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SYSTEM LOG -->
+      <div class="system-log-container">
+        <div class="system-log-title">System Log</div>
+        <ul class="system-log-messages">
+          <!-- Log messages will be injected by JavaScript -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
